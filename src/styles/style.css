@@ -1,0 +1,180 @@
+
+* {
+    --dark: rgb(1, 62, 87);
+    --lighDark: rgb(1, 105, 146);
+    --light: rgb(255, 229, 190);
+    }
+  body {
+    font-size: 24px;
+    
+  }
+  
+  header, footer {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  main{
+    background-color: var(--lighDark);
+    color: var(--light);
+  }
+  h1{
+    display: inline;
+    justify-content: center;
+    font-size: 400%;
+    margin: 5px;
+  }
+  h2{
+    margin: 0px 5px 5px 5px;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+  }
+  h3 {
+    margin: 5px;
+    font-size: 150%;
+    
+  }
+  h4 {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 125%;
+  }
+  p {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+  }
+  nav{
+    
+    display: flex;
+    justify-content: flex-end;
+    font-size: 200%;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    margin: 5px;
+    border: 2px solid black;
+    padding: 2px;
+    flex-direction: row;
+  }
+  form {
+    text-align: center;
+  }
+  footer {
+    text-align: right;
+  }
+  #aboutMe, #myWork, #contactMe {
+    text-align: center;
+  }
+  
+  a:link, a:visited {
+      color: var(--light);
+  }
+  a:hover {
+      color: lime;
+  }
+  
+  .divImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .aboutMeImg {
+      width: 48%; 
+     height: 25%;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .myWorkDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .myWorkimg {
+    float:left;
+   margin: 5px;
+   
+  }
+  
+  
+  .myWorka:link, .myWorka {
+    color: transparent;
+  }
+  
+  .myWorkimg:hover {
+    border: black solid 5px;
+  
+  }
+  
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  
+  
+  .textDeceration {
+    position: absolute;
+    top: 345px;
+    left: 20px;
+    background-color: white;
+    padding: 10px;
+  }
+  @media screen and (max-width: 870px) {
+    ul {
+      flex-direction: column;
+    }
+    nav {
+      justify-content: center;
+    }
+    h2 {
+      padding-top: 20px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .myWorkimg {
+      width: 96%;
+      
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .textDeceration {
+      top: 20px;
+    }
+    .divImage {
+      flex-direction: column;
+    }
+    .aboutMeImg {
+      width: 96%;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  
+  }
+  @media screen and (max-width: 458px) {
+    .textDeceration {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 386px) {
+      .textDeceration {
+        font-size: 16px;
+      }
+      body {
+        font-size: 20px;
+      }
+  }
+    
